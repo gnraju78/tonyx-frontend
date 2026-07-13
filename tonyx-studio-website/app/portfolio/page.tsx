@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { PageHero } from "@/components/page-hero"
 import { PortfolioGrid } from "@/components/portfolio/portfolio-grid"
+import { PortfolioSmoothScroll } from "@/components/portfolio/portfolio-smooth-scroll"
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -12,6 +13,8 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   return (
     <main>
+      <PortfolioSmoothScroll />
+
       <PageHero
         eyebrow="Selected Work"
         title="Weddings, told as they deserve to be remembered."

@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from 'next'
 import { Playfair_Display, Manrope } from 'next/font/google'
 import { SiteHeader } from '@/components/site-header'
 import { SiteFooter } from '@/components/site-footer'
-import { SmoothScroll } from '@/components/smooth-scroll'
 import './globals.css'
 
 const playfair = Playfair_Display({
@@ -55,7 +54,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${manrope.variable} bg-background`}>
       <body className="antialiased">
-        <SmoothScroll />
         <SiteHeader />
         {children}
         <SiteFooter />

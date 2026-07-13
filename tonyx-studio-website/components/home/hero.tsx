@@ -14,12 +14,12 @@ export function Hero() {
         transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1] }}
         className="absolute inset-0"
       >
-        <img
-        src={"https://img.magnific.com/free-photo/top-view-photo-camera-indoors-still-life_23-2150630615.jpg?semt=ais_hybrid&w=740&q=80"}
+       <img
+          src="/home/H%201.jpg.jpeg"
           alt="A couple embracing at a luxury estate wedding at golden hour"
           className="size-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/10 to-background" />
+        <div className="absolute " />
         <div className="absolute inset-0 bg-foreground/20" />
       </motion.div>
 
@@ -79,14 +79,7 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.6 }}
-        className="absolute bottom-10 left-1/2 z-10 -translate-x-1/2 text-[0.65rem] uppercase tracking-luxe text-background/80"
-      >
-        Scroll to enter
-      </motion.div>
+     
     </section>
   )
 }

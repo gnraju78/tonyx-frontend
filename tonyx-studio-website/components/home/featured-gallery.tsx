@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils"
 
 export function FeaturedGallery() {
   return (
-    <section className="bg-secondary py-28 md:py-40">
+    <section className="bg-secondary py-8 md:py-10">
       <div className="container-luxe">
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div>

@@ -4,14 +4,57 @@ export type GalleryItem = {
   span?: "tall" | "wide" | "normal"
   query: string
 }
+export const gallery = [
+  {
+    title: "Royal Wedding",
+    location: "Hyderabad",
+    query: "luxury indian wedding couple",
+    span: "tall",
+  },
+  {
+    title: "Beach Romance",
+    location: "Goa",
+    query: "couple beach sunset photography",
+    span: "wide",
+  },
+  {
+    title: "Traditional Moments",
+    location: "Tirupati",
+    query: "south indian wedding photography",
+  },
+  {
+    title: "Destination Love",
+    location: "Udaipur",
+    query: "udaipur palace wedding",
+    span: "tall",
+  },
+  {
+    title: "Pre Wedding",
+    location: "Kerala",
+    query: "pre wedding photoshoot nature",
+  },
+  {
+    title: "Reception Night",
+    location: "Bengaluru",
+    query: "luxury wedding reception photography",
+    span: "wide",
+  },
 
-export const gallery: GalleryItem[] = [
-  { title: "Elowen & James", location: "Lake Como, Italy", span: "tall", query: "luxury lakeside wedding couple italian villa golden hour" },
-  { title: "Aria & Theo", location: "Marrakech, Morocco", span: "wide", query: "elegant destination wedding riad morocco warm tones" },
-  { title: "Noor & Sami", location: "Santorini, Greece", span: "normal", query: "white santorini wedding ceremony sea view bride groom" },
-  { title: "Isabelle & Marc", location: "Provence, France", span: "normal", query: "provence lavender field wedding editorial fine art" },
-  { title: "Sofia & Luca", location: "Amalfi Coast", span: "tall", query: "amalfi coast cliffside wedding reception candlelight" },
-  { title: "Hana & Kenji", location: "Kyoto, Japan", span: "wide", query: "intimate kyoto temple wedding cherry blossoms elegant" },
+  // NEW IMAGE 1
+  {
+    title: "Golden Hour",
+    location: "Araku Valley",
+    query: "golden hour couple photography mountains",
+    span: "tall",
+  },
+
+  // NEW IMAGE 2
+  {
+    title: "Forever Together",
+    location: "Jaipur",
+    query: "royal palace wedding couple portrait",
+    span: "wide",
+  },
 ]
 
 export const services = [

@@ -3,7 +3,7 @@ import { placeholder } from "@/lib/site-data"
 
 export function Philosophy() {
   return (
-    <section className="container-luxe py-28 md:py-40">
+    <section className="container-luxe py-8 md:py-10">
       <div className="grid items-center gap-16 lg:grid-cols-2">
         <div className="order-2 lg:order-1">
           <Reveal>
@@ -24,9 +24,9 @@ export function Philosophy() {
           <Reveal delay={3}>
             <div className="mt-12 grid grid-cols-3 gap-8 border-t border-border pt-10">
               {[
-                { n: "12+", l: "Years" },
+                { n: "8+", l: "Years" },
                 { n: "300+", l: "Weddings" },
-                { n: "40+", l: "Countries" },
+                { n: "4+", l: "States" },
               ].map((s) => (
                 <div key={s.l}>
                   <div className="font-serif text-4xl">{s.n}</div>
@@ -40,10 +40,10 @@ export function Philosophy() {
         </div>
 
         <Reveal delay={1} className="order-1 lg:order-2">
-          <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="relative aspect-[4/6] overflow-hidden">
             <img
-              src={placeholder("fine art wedding portrait bride veil natural window light editorial", 900, 1100) || "/placeholder.svg"}
-              alt="Fine-art bridal portrait in natural light"
+              src="/home/tonyxBanner.png"
+              alt="TONYX Studio Banner"
               className="size-full object-cover"
             />
           </div>
