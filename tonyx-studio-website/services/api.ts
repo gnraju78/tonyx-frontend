@@ -3,7 +3,7 @@ export interface BookingData {
   partnerName?: string;
   email: string;
   mobileNumber: string;
-  weddingDate?: string;
+  EventDate?: string;
   location: string;
   collectionOfInterest: string;
   tellUsAboutYourDay?: string;

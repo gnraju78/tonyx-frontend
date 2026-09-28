@@ -13,7 +13,7 @@ const schema = z.object({
   partnerName: z.string().optional(),
   email: z.string().email("Please enter a valid email"),
   mobileNumber: z.string().min(5, "Please enter a valid mobile number"),
-  weddingDate: z.string().optional(),
+  EventDate: z.string().optional(),
   location: z.string().min(2, "Please enter a location"),
   collectionOfInterest: z.string().min(1, "Please select a collection"),
   tellUsAboutYourDay: z.string().min(10, "Tell us a little about your day"),
@@ -94,8 +94,8 @@ export function ConsultationForm() {
       </div>
 
       <div className="grid gap-8 sm:grid-cols-2">
-        <Field label="Wedding date" error={errors.weddingDate?.message}>
-          <input type="text" placeholder="Approx. or TBD" className={fieldBase} {...register("weddingDate")} />
+        <Field label="Event Date" error={errors.EventDate?.message}>
+          <input type="date" className={fieldBase} {...register("EventDate")} />
         </Field>
         <Field label="Location" error={errors.location?.message}>
           <input type="text" placeholder="City / venue / TBD" className={fieldBase} {...register("location")} />
